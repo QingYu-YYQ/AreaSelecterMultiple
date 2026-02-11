@@ -51,7 +51,7 @@ import { districtList } from '@/apis/customForm';
 import { deepClone } from '@/utils/clone';
 import { defineComponent, reactive, toRefs, watch } from 'vue';
 
-import './index.scss';
+import './AreaSelecterMultiple.scss';
 
 const currentSelectedProvince = {
   id: '',
