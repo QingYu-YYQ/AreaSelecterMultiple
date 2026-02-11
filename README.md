@@ -1,5 +1,6 @@
 # AreaSelecterMultiple
-Taro+Vue3.0 地区选择器
+#### Taro+Vue3.0 微信小程序地区选择器
+#### node >= 16.18.0
 
 ## 实现功能
 #### 1、支持选择全国；省、市多选
