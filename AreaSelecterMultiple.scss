@@ -1,0 +1,105 @@
+.area-selecter-multiple-2 {
+  width: 100vw;
+  position: relative;
+  .box {
+    display: flex;
+    height: calc(55vh + 60px);
+  }
+  .left-box {
+    width: 35%;
+    height: 55vh;
+    overflow-y: auto;
+    background: #F6F6FB;
+    display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    .province {
+      flex-shrink: 0;
+      font-weight: 400;
+      font-size: 12px;
+      color: #62636C;
+      padding: 9px 10px;
+      padding-right: 30px;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      overflow: hidden; 
+      white-space: noWrap;
+      text-overflow: ellipsis;
+      position: relative;
+      .count {
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        width: 14px;
+        height: 14px;
+        background: #1A66FF;
+        border-radius: 50%;
+        font-weight: 400;
+        font-size: 8px;
+        color: #FFFFFF;
+      }
+      &.checked {
+        color: #1A66FF;
+        background-color: #ffffff;
+      }
+    }
+  }
+  .right-box {
+    width: 65%;
+    text-align: left;
+    height: 55vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    .city {
+      display: inline-block;
+      width: 45%;
+      margin: 5px;
+      background: #F6F6FB;
+      border-radius: 4px;
+      padding: 6px;
+      overflow: hidden; 
+      white-space: noWrap;
+      text-overflow: ellipsis;
+      font-weight: 400;
+      font-size: 11px;
+      color: #62636C;
+      text-align: center;
+      border: 1px solid #F6F6FB;
+      &.checked {
+        color: #1A66FF;
+        background-color: rgba(26, 102, 255, 0.1);
+        border: 1px solid #1A66FF;
+      }
+    }
+  }
+  .footer {
+    padding: 8px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    box-shadow: 0px -2px 4px 0px rgba(209,209,209,0.5);
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 20px;
+    .nut-button {
+      flex: 1;
+      margin: 0 5px !important;
+      height: 43px;
+
+      &:last-of-type {
+        flex: 4;
+      }
+    }
+  }
+}
